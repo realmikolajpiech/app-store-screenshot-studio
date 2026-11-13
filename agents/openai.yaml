@@ -1,0 +1,4 @@
+interface:
+  display_name: "App Store Screenshot Studio"
+  short_description: "App-grounded copy and art-directed screenshot sets"
+  default_prompt: "Use $app-store-screenshot-studio to analyze my app and create a cohesive, varied screenshot campaign."

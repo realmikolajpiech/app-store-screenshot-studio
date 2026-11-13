@@ -1,0 +1,82 @@
+{
+  "schema_version": 1,
+  "status": "planning",
+  "app": "Hypothetical meal-planning app",
+  "locale": "en-US",
+  "audience": "Busy home cooks",
+  "constraints": {
+    "device_in_every_frame": true,
+    "wordmark": false,
+    "preserve_existing_ui": true
+  },
+  "direction": {
+    "status": "proposed",
+    "grammar": "Derive palette, typography and materials from this app and supplied references.",
+    "reference_paths": [],
+    "art_brief": {
+      "visual_idea": "Hypothesis to verify: the same ingredients connect a dinner photo to its planned day in the app.",
+      "typographic_character": null,
+      "spatial_material_language": null,
+      "brand_anchors": [],
+      "reference_study": []
+    },
+    "representative_frames": [
+      "01",
+      "select a contrasting frame from the actual story"
+    ],
+    "benchmark_review": {
+      "status": "pending",
+      "reference": null,
+      "visible_gaps": [],
+      "next_corrections": []
+    }
+  },
+  "placements": [
+    {
+      "name": "iphone-screenshot",
+      "target_pixels": [
+        1206,
+        2622
+      ],
+      "depicted_device": "iPhone",
+      "spec_source": "https://developer.apple.com/help/app-store-connect/reference/app-information/screenshot-specifications",
+      "spec_checked_at": null
+    }
+  ],
+  "frames": [
+    {
+      "id": "01",
+      "headline": "A dinner plan that fits your week",
+      "benefit": "Plan dinners using ingredients already at home",
+      "evidence": [
+        {
+          "path": "src/features/meal-plan",
+          "confidence": "needs_verification"
+        }
+      ],
+      "capture": {
+        "path": null,
+        "assessment": "not_captured"
+      },
+      "layout": {
+        "role": "outcome hero",
+        "type_position": "upper left",
+        "device_lean": "upright",
+        "focal_ui": "populated weekly meal plan",
+        "metaphor": "derive from app; not selected",
+        "visual_relationship": "Select from the verified product content before rendering; a device lean alone is not the idea."
+      },
+      "substitutions": {},
+      "versions": [],
+      "selected_version": null,
+      "exports": [],
+      "status": "proposed"
+    }
+  ],
+  "reviews": {
+    "visual": "pending",
+    "file_validation": "pending",
+    "store_preview": "not_performed"
+  },
+  "preview_path": null
+}

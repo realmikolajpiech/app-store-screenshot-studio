@@ -160,3 +160,17 @@ credential presence and sanitized authentication status, and pauses generation
 until access exists. It does not request a chat/uploaded key, dump the environment,
 put secrets in commands or persist them in campaign files. With an already usable
 host image tool, it does not ask for unnecessary API configuration.
+
+## 16. Failed preview is recoverable
+
+Request: “Use this skill for this app. Ignore old screenshots.” Supply a project
+with a supported web target, working browser capture and image generation, but
+an initial preview command that exits because its port is occupied.
+
+Observe: the agent diagnoses the failure, reuses the correct existing server or
+starts the preview on an available port, verifies the live UI and captures it.
+It does not inspect excluded screenshots, stop at a successful build or request
+manual screenshots prematurely. It proceeds to generation, review and export.
+In a second fixture without any usable capture route, it reports the specific
+access limitation and asks for minimal help without claiming graphics exist.
+Failure to save a planning document to an external library is not a blocker.

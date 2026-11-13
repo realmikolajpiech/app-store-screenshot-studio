@@ -17,6 +17,12 @@ discovery. Keep state in the user's project, not a particular agent's private
 memory. Reuse decisions unless the user or the app has materially changed them.
 Preserve unrelated files and follow local project instructions.
 
+An invocation such as “use this skill for this app” requests the full workflow
+through generated artwork, review and exports, unless the user narrows the scope.
+A plan is an intermediate artifact, not completion. Save working notes locally;
+publishing a planning document to a library or external service is not a required
+step and its failure must not block screenshot production.
+
 Establish the audience, locale, requested assets, upload slot, available captures
 and references from context. Ask only about unresolved choices that affect the
 result. If the user says to wait for visual references, prepare the brief and
@@ -69,7 +75,9 @@ Inspect pixels, not filenames. Prefer active, representative states where the
 benefit is visible; an intentional empty state can be appropriate when it is the
 feature. Mark captures ready, usable with a named limitation, or retake.
 Capture through available tools when authorized, following the project's data
-environment rules. If capture tools are unavailable, give a precise capture list.
+environment rules. Follow the capture recovery workflow in
+[discovery.md](references/discovery.md) before asking the user for screenshots.
+A failed launch is not evidence that all capture tools are unavailable.
 
 Each promise needs visual proof. Do not fake an absent feature or a native iPad
 screen by asking an image model to invent it. Use authorized demo data and

@@ -63,3 +63,33 @@ Use the project's authorized showcase environment. Do not mutate live customer
 data for a capture. Normalize distracting chrome where supported; preserve real
 theme and selected state. Record anonymization substitutions before generation
 so phone UI and enlarged cards do not drift into different identities.
+
+## Recover capture failures before handing work back
+
+Inspect the project's run instructions, actual available tools, existing running
+app/dev server and permitted capture routes. If the user excluded old screenshots,
+do not inspect or reuse those files; capture the current application instead.
+
+When a launch or capture fails, identify the concrete failure from the command
+output or UI state. Apply a targeted, reversible correction within the authorized
+scope, then retry. For example, distinguish an exited server, wrong URL or port,
+browser connection problem, missing runtime, and an authentication requirement.
+A successful web build is not a running preview; start or serve it using the
+project's supported commands, verify it responds, then capture through available
+browser tools. Do not repeat an unchanged failing command without new evidence.
+
+If that route is genuinely unavailable, try another existing supported route:
+an accessible native app/simulator, a development preview, or the project's web
+target if it faithfully renders the relevant interface. Record source platform
+and visible differences; do not label web captures as native. Respect explicit
+device/emulator prohibitions. Do not install large SDKs, invent a replacement UI
+or change application behavior just to manufacture proof.
+
+Ask the user only for the remaining external dependency once available permitted
+routes have been exhausted or a concrete access boundary is established. State
+briefly what failed and why the fallback cannot proceed, then request the smallest
+useful intervention (such as starting the native app or supplying two specified
+screens). Continue independent copy and art-direction work, but label the state
+accurately: “brief ready; captures and artwork pending,” never “finished graphics”
+when no graphics exist. With captures and generation available, continue through
+production instead of stopping at the plan unless the user requested a pause.

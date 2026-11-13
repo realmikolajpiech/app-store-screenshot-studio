@@ -34,6 +34,14 @@ is a structural example, not facts or a style preset. Store source evidence,
 capture pairings, copy, layout decisions, versions, approved paths, dimensions,
 tool and prompt paths. Distinguish proposed, approved and exported states.
 
+Image generation is required for new campaign artwork and visual revisions.
+Before rendering, discover the host's image-generation tool and read the
+generation/access workflow in [production.md](references/production.md). If no
+usable generator is available, ask for secure local API configuration and pause
+artwork production. Never ask for an API key in chat or silently substitute a
+Pillow, SVG, HTML/CSS or canvas-built campaign. Discovery and capture work can
+continue while access is pending.
+
 ## 1. Discover benefits from the product
 
 Read [discovery.md](references/discovery.md) for a new campaign or revised copy.
@@ -104,11 +112,12 @@ For an approved direction or narrow revision, preserve the work and change only 
 
 ## 4. Produce faithful artwork
 
-Read [production.md](references/production.md) for composition, generation
-and edits. When captures, product content and type carry the concept, compose
-with those assets. If the concept needs new raster art, use a supported image
-tool and honor explicit model choices. If a required visual cannot be produced,
-finish the usable work and specify what remains unrendered.
+Read [production.md](references/production.md) for generation, secure access
+and edits. Use an actual image-generation/editing call to produce each new
+creative or visual revision, honoring explicit model choices. Generate the
+intended composition, not a token decorative asset added to a procedural poster.
+Record the tool/model, prompt and returned artifact paths, never credentials.
+An unavailable or failed generator leaves production pending, not complete.
 
 Separate creative environment from product evidence. Reuse real screen pixels
 with deterministic compositing where permitted; generate around them. If a tool

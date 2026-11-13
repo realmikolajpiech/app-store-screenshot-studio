@@ -95,6 +95,12 @@ order; when it creates a coherent calm sequence, preserve it.
 
 ## Delivery check
 
+Confirm each new creative or visual revision has an actual generation/editing
+result recorded in its provenance. A generation prompt without a completed call,
+or a generated decoration pasted onto a scripted campaign, does not satisfy the
+production requirement. Keep this separate from visual review: generated output
+can still fail the benchmark and require another iteration.
+
 Validate decoded dimensions, file format and absence of alpha. Check the delivery
 folder contains only selected upload files, not contact sheets, scripts, source
 captures or abandoned versions. Do not create archives unless explicitly asked.

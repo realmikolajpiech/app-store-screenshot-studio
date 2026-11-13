@@ -1,25 +1,60 @@
 # Production and precise revisions
 
-## Available workflow
+## Required generation workflow
 
-Choose tools after the visual direction. Compose directly when real captures,
-product content and type support the intended finish. Use the host's supported
-image tool for new raster art when the concept needs it. A convenient HTML/CSS
-renderer is not a reason to replace a planned photographic or material scene
-with flat cards, a gradient and a basic device outline. Equally, do not generate
-ornament merely because a generator is available.
-No named vendor, MCP, paid intermediary or API key is required by this skill. Discover actual reference,
-input and output capabilities before promising them. Honor explicit model
-choices and host editing rules. Do not install providers or alter keys/config
-just because generation is unavailable.
+New campaign artwork and visual revisions must use image generation/editing.
+This includes restrained, typography-led directions: generation is a production
+requirement, not a reason to add ornament. Do not replace the creative with
+programmatically drawn phones, gradients and cards in Pillow, SVG, HTML/CSS or
+canvas. Scripts may support faithful UI insertion, exact typography where
+permitted, export, color conversion, validation and contact sheets; they must
+not become an alternative campaign renderer.
+
+1. Discover the host's built-in image tool first (for example, Codex's available
+   image-generation tool). Use it without requesting an API key when available.
+   Honor an explicitly requested provider/model and the host's editing rules.
+2. If no usable host tool exists, check for an already configured, authorized
+   image provider without exposing credentials. A text-only model is insufficient.
+3. If neither route works, explain that generation is required and ask which
+   provider the user will configure locally, for example Gemini image generation,
+   xAI's image offering or OpenAI GPT Image. Read that provider's current official
+   documentation before specifying model IDs, endpoints or setup instructions;
+   do not hardcode a supposedly latest model. Explain relevant API billing before
+   initiating a newly selected paid service.
+4. Keep artwork production pending until access works. Continue useful analysis,
+   copy and captures; do not deliver a procedural substitute as finished art.
+
+Generate the planned composition using actual captures and visual references
+with explicit roles. Inspect returned artifacts before expanding the series.
+A successful tool call alone is not evidence of adequate visual quality.
+
+## Secure API setup
+
+Ask the user to configure access, never to paste a key into chat. Prefer the
+host/provider's secret store or credential manager. Otherwise use a provider's
+documented environment variable, configured locally by the user and inherited
+by the execution environment. Give instructions with placeholders only. Do not
+have the agent type a real key into a shell command or ask the user to run a
+command that prints it. Do not change global configuration without authorization.
+
+Read credentials at runtime only for the selected provider's authentication.
+Check presence as a boolean and verify access with a minimal request; report
+only success or a sanitized error. Do not print environment dumps, request
+headers, raw debug traces or response objects that might echo authentication.
+Never put keys in prompts, image metadata, manifests, source files, command-line
+arguments, URLs, logs, commits or public artifacts. A local configuration file,
+if required by the host, must remain outside the deliverable/repository and have
+restricted access. If a key is accidentally disclosed, do not repeat it; advise
+revocation and replacement through the provider's console.
 
 Separate environment, hardware, real screen pixels and live type when supported.
 Generate around product evidence and composite deterministically where allowed.
 A model that redraws the whole scene can also alter small labels; “keep exactly”
 does not guarantee preservation. Compare and restore through supported tools.
 
-Same-ratio file export does not need regeneration. A wider canvas that exposes
-missing environment does need outpainting or a considered recomposition.
+File-only operations on approved art (dimensions, color conversion, validation,
+contact sheets) do not need another generation call. A wider canvas that exposes
+missing environment needs image-based outpainting or regenerated composition.
 
 ## Build the picture, then finish it
 

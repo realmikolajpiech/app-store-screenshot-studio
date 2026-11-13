@@ -33,7 +33,8 @@ app captures are bundled.
   logo reclaims space; wider formats get continuous backgrounds, not side bars.
 - Covers iPhone/iPad screenshots and static header/search creatives, with current
   slot verification and exact-size opaque exports.
-- Uses your available image tools. No mandatory provider, API key or MCP server.
+- Requires image generation for artwork. Uses the host's built-in image tool
+  first; otherwise asks you to configure a provider securely on your machine.
 - Keeps resumable project-local decisions, prompts, versions and final paths.
 
 Visual review includes the quality of type, imagery and integration, separate
@@ -58,9 +59,13 @@ Put this folder, including `SKILL.md`, in your agent's skill directory:
 - Other skill-capable agents: use their supported skill location or load
   `SKILL.md` directly. Tool access and automatic discovery vary by host.
 
-No model API credentials are shipped or requested by the skill. Image generation
-requires an available host tool or an explicitly selected provider. Analysis,
-copy, planning and export helpers can be used without generation.
+No specific provider or MCP server is required. New artwork and visual revisions
+require a working image-generation tool or API. Without one, the agent asks you
+to configure your chosen provider locally and pauses artwork production; it does
+not substitute a scripted poster. Never paste API keys into chat. Use the host's
+secret store or a locally configured environment variable. Credentials do not
+belong in prompts, logs, manifests or this repository. Analysis, copy, planning
+and file-only operations on approved artwork can proceed without generation.
 
 ## Use
 
